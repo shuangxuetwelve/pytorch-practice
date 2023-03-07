@@ -3,7 +3,7 @@ import random
 def sample_MNIST_with_all_labels(dataset):
     images = {}
     while True:
-        index = random.randint(0, len(dataset))
+        index = random.randint(0, len(dataset)-1)
         image, label = dataset[index]
         if label not in images:
             images[label] = image
