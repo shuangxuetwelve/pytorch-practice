@@ -1,4 +1,6 @@
+# Python imports.
 import random
+import time
 
 def sample_MNIST_with_all_labels(dataset):
     images = {}
@@ -13,3 +15,15 @@ def sample_MNIST_with_all_labels(dataset):
             break
     
     return images
+
+class Timer():
+
+    def start(self):
+        self.start_time = time.time()
+
+    def stop(self):
+        self.end_time = time.time()
+
+    # Get the duration in seconds.
+    def getDuration(self):
+        return self.end_time - self.start_time    
