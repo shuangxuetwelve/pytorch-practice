@@ -31,6 +31,13 @@
 1. 不要小看缓慢改善阶段。10-50 epochs使learning rate为10的模型的training准确率从98.5%上升到99.6%、使learning rate为0.01的模型的training准确率从91.5%上升到96%。50-200 epochs使learning rate为10的模型的training准确率从99.6%上升到99.7%、使learning rate为0.01的模型的training准确率从96%上升到98.7%，200-500 epochs使learning rate为10的模型的training准确率从99.7%上升到99.8%、使learning rate为0.01的模型的training准确率从98.7%上升到99.5%。
 2. 不同的learning rate，缓慢改善所需要的epoch是不同的。learning rate越大，缓慢改善所需要的epoch就越少。
 
+# Initialization
+
+从MNIST-FCN-1-initialization的实验可以得出以下结论：
+1. xavier_normal、kaiming_normal和sparse的收敛性能和能力相近，都可以在50 epochs收敛到0.996的training准确率。
+2. uniform和normal的收敛性能和能力都比xavier_normal、kaiming_normal和sparse要差一点。
+3. zeros因为无法打破对称性，所以也就没有什么收敛性能和能力可言了。
+
 # 提升模型准确率的方法
 
 1. 挑选合适的激活函数，并且ReLU的优先级要高于Sigmoid函数。
