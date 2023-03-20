@@ -28,7 +28,7 @@
 # Epochs
 
 从MNIST-FCN-1-epochs的实验可以得出以下结论：
-1. 不要小看缓慢改善阶段。10-50 epochs使learning rate为10的模型的training准确率从98.5%上升到99.6%、使learning rate为0.01的模型的training准确率从91.5%上升到96%。50-200 epochs使learning rate为10的模型的training准确率从99.6%上升到99.7%、使learning rate为0.01的模型的training准确率从96%上升到98.7%，200-500 epochs使learning rate为10的模型的training准确率从99.7%上升到99.8%、使learning rate为0.01的模型的training准确率从98.7%上升到99.5%。
+1. 不要小看缓慢改善阶段。10-50 epochs使learning rate为10的模型的training准确率从98.5%上升到99.5%、使learning rate为0.01的模型的training准确率从96.5%上升到99%。50-200 epochs使learning rate为10的模型的training准确率从99.5%上升到99.7%、使learning rate为0.01的模型的training准确率从99%上升到99.7%，200-500 epochs使learning rate为10的模型的training准确率从99.7%上升到99.8%、使learning rate为0.01的模型的training准确率从98.7%上升到99.5%。
 2. 不同的learning rate，缓慢改善所需要的epoch是不同的。learning rate越大，缓慢改善所需要的epoch就越少。
 
 # Initialization
