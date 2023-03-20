@@ -37,6 +37,7 @@
 1. xavier_normal、kaiming_normal和sparse的收敛性能和能力相近，都可以在50 epochs收敛到0.996的training准确率。
 2. uniform和normal的收敛性能和能力都比xavier_normal、kaiming_normal和sparse要差一点。
 3. zeros因为无法打破对称性，所以也就没有什么收敛性能和能力可言了。
+4. uniform比normal在收敛性能和能力上要差一些。
 
 # 提升模型准确率的方法
 
